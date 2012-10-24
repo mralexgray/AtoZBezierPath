@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BB86FE216384C490000C242 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C48B371395FA380043E2C7 /* Cocoa.framework */; };
+		7BB86FE816384C490000C242 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BB86FE616384C490000C242 /* InfoPlist.strings */; };
+		7BB86FEC16384C490000C242 /* AtoZBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB86FEB16384C490000C242 /* AtoZBezierPath.m */; };
+		7BB86FF016384C630000C242 /* MyDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = A1C48B491395FA390043E2C7 /* MyDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB86FF116384C630000C242 /* CanvasView.h in Headers */ = {isa = PBXBuildFile; fileRef = A1C48B63139602480043E2C7 /* CanvasView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB86FF216384C630000C242 /* Canvas.h in Headers */ = {isa = PBXBuildFile; fileRef = A1C48B66139602800043E2C7 /* Canvas.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB86FF316384C630000C242 /* Geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = A192AB57139D8D5F00AF40BA /* Geometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB86FF416384C630000C242 /* NSBezierPath+Boolean.h in Headers */ = {isa = PBXBuildFile; fileRef = A11131E313960B9D00C9395C /* NSBezierPath+Boolean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB86FF516384C630000C242 /* NSBezierPath+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A1C48B5D1395FAE10043E2C7 /* NSBezierPath+Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB86FF616384C630000C242 /* FBBezierCurve.h in Headers */ = {isa = PBXBuildFile; fileRef = A192AB51139D843B00AF40BA /* FBBezierCurve.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB86FF716384C630000C242 /* FBBezierIntersection.h in Headers */ = {isa = PBXBuildFile; fileRef = A192AB54139D863900AF40BA /* FBBezierIntersection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB86FF816384C630000C242 /* FBBezierGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A3D0A513A9BCB800678AA9 /* FBBezierGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB86FF916384C630000C242 /* FBBezierContour.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A3D0A913A9CE0E00678AA9 /* FBBezierContour.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB86FFA16384C630000C242 /* FBContourEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A3D0AC13A9CE3B00678AA9 /* FBContourEdge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB86FFB16384C630000C242 /* FBEdgeCrossing.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A3D0AF13A9CE5100678AA9 /* FBEdgeCrossing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB86FFC16384C630000C242 /* FBDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A3D0B213AC0F2F00678AA9 /* FBDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB86FFD16384C630000C242 /* AtoZBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BB86FEA16384C490000C242 /* AtoZBezierPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB86FFF16384C870000C242 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C48B4A1395FA390043E2C7 /* MyDocument.m */; };
+		7BB8700016384C870000C242 /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C48B64139602480043E2C7 /* CanvasView.m */; };
+		7BB8700116384C870000C242 /* Canvas.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C48B67139602810043E2C7 /* Canvas.m */; };
+		7BB8700216384C870000C242 /* Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = A192AB58139D8D6000AF40BA /* Geometry.m */; };
+		7BB8700316384C870000C242 /* NSBezierPath+Boolean.m in Sources */ = {isa = PBXBuildFile; fileRef = A11131E413960B9D00C9395C /* NSBezierPath+Boolean.m */; };
+		7BB8700416384C870000C242 /* NSBezierPath+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C48B5E1395FAE20043E2C7 /* NSBezierPath+Utilities.m */; };
+		7BB8700516384C870000C242 /* FBBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = A192AB52139D843B00AF40BA /* FBBezierCurve.m */; };
+		7BB8700616384C870000C242 /* FBBezierIntersection.m in Sources */ = {isa = PBXBuildFile; fileRef = A192AB55139D863900AF40BA /* FBBezierIntersection.m */; };
+		7BB8700716384C870000C242 /* FBBezierGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A3D0A613A9BCB900678AA9 /* FBBezierGraph.m */; };
+		7BB8700816384C870000C242 /* FBBezierContour.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A3D0AA13A9CE0F00678AA9 /* FBBezierContour.m */; };
+		7BB8700916384C870000C242 /* FBContourEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A3D0AD13A9CE3B00678AA9 /* FBContourEdge.m */; };
+		7BB8700A16384C870000C242 /* FBEdgeCrossing.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A3D0B013A9CE5200678AA9 /* FBEdgeCrossing.m */; };
+		7BB8700B16384C870000C242 /* FBDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A3D0B313AC0F3100678AA9 /* FBDebug.m */; };
+		7BB8700F16384D350000C242 /* AtoZBezierPath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB86FE116384C490000C242 /* AtoZBezierPath.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7BB8701016384D410000C242 /* AtoZBezierPath.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BB86FE116384C490000C242 /* AtoZBezierPath.framework */; };
+		A1C48B381395FA380043E2C7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C48B371395FA380043E2C7 /* Cocoa.framework */; };
+		A1C48B421395FA390043E2C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1C48B401395FA390043E2C7 /* InfoPlist.strings */; };
+		A1C48B451395FA390043E2C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C48B441395FA390043E2C7 /* main.m */; };
+		A1C48B481395FA390043E2C7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A1C48B461395FA390043E2C7 /* Credits.rtf */; };
+		A1C48B4B1395FA390043E2C7 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C48B4A1395FA390043E2C7 /* MyDocument.m */; };
+		A1C48B4E1395FA390043E2C7 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C48B4C1395FA390043E2C7 /* MyDocument.xib */; };
+		A1C48B511395FA390043E2C7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C48B4F1395FA390043E2C7 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BB8700C16384D240000C242 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1C48B2A1395FA370043E2C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BB86FE016384C490000C242;
+			remoteInfo = AtoZBezierPath;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7BB8700E16384D2A0000C242 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7BB8701016384D410000C242 /* AtoZBezierPath.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7BB86FE116384C490000C242 /* AtoZBezierPath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AtoZBezierPath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB86FE516384C490000C242 /* AtoZBezierPath-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AtoZBezierPath-Info.plist"; sourceTree = "<group>"; };
+		7BB86FE716384C490000C242 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7BB86FE916384C490000C242 /* AtoZBezierPath-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AtoZBezierPath-Prefix.pch"; sourceTree = "<group>"; };
+		7BB86FEA16384C490000C242 /* AtoZBezierPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = AtoZBezierPath.h; sourceTree = "<group>"; };
+		7BB86FEB16384C490000C242 /* AtoZBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AtoZBezierPath.m; sourceTree = "<group>"; };
+		A11131E313960B9D00C9395C /* NSBezierPath+Boolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+Boolean.h"; sourceTree = "<group>"; };
+		A11131E413960B9D00C9395C /* NSBezierPath+Boolean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+Boolean.m"; sourceTree = "<group>"; };
+		A192AB51139D843B00AF40BA /* FBBezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBezierCurve.h; sourceTree = "<group>"; };
+		A192AB52139D843B00AF40BA /* FBBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBBezierCurve.m; sourceTree = "<group>"; };
+		A192AB54139D863900AF40BA /* FBBezierIntersection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBezierIntersection.h; sourceTree = "<group>"; };
+		A192AB55139D863900AF40BA /* FBBezierIntersection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBBezierIntersection.m; sourceTree = "<group>"; };
+		A192AB57139D8D5F00AF40BA /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
+		A192AB58139D8D6000AF40BA /* Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Geometry.m; sourceTree = "<group>"; };
+		A1A3D0A513A9BCB800678AA9 /* FBBezierGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBezierGraph.h; sourceTree = "<group>"; };
+		A1A3D0A613A9BCB900678AA9 /* FBBezierGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBBezierGraph.m; sourceTree = "<group>"; };
+		A1A3D0A913A9CE0E00678AA9 /* FBBezierContour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBezierContour.h; sourceTree = "<group>"; };
+		A1A3D0AA13A9CE0F00678AA9 /* FBBezierContour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBBezierContour.m; sourceTree = "<group>"; };
+		A1A3D0AC13A9CE3B00678AA9 /* FBContourEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBContourEdge.h; sourceTree = "<group>"; };
+		A1A3D0AD13A9CE3B00678AA9 /* FBContourEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBContourEdge.m; sourceTree = "<group>"; };
+		A1A3D0AF13A9CE5100678AA9 /* FBEdgeCrossing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBEdgeCrossing.h; sourceTree = "<group>"; };
+		A1A3D0B013A9CE5200678AA9 /* FBEdgeCrossing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBEdgeCrossing.m; sourceTree = "<group>"; };
+		A1A3D0B213AC0F2F00678AA9 /* FBDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDebug.h; sourceTree = "<group>"; };
+		A1A3D0B313AC0F3100678AA9 /* FBDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDebug.m; sourceTree = "<group>"; };
+		A1C48B331395FA380043E2C7 /* VectorBoolean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VectorBoolean.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C48B371395FA380043E2C7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A1C48B3A1395FA390043E2C7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A1C48B3B1395FA390043E2C7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A1C48B3C1395FA390043E2C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A1C48B3F1395FA390043E2C7 /* VectorBoolean-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VectorBoolean-Info.plist"; sourceTree = "<group>"; };
+		A1C48B411395FA390043E2C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1C48B431395FA390043E2C7 /* VectorBoolean-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VectorBoolean-Prefix.pch"; sourceTree = "<group>"; };
+		A1C48B441395FA390043E2C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1C48B471395FA390043E2C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A1C48B491395FA390043E2C7 /* MyDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
+		A1C48B4A1395FA390043E2C7 /* MyDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
+		A1C48B4D1395FA390043E2C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyDocument.xib; sourceTree = "<group>"; };
+		A1C48B501395FA390043E2C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A1C48B5D1395FAE10043E2C7 /* NSBezierPath+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+Utilities.h"; sourceTree = "<group>"; };
+		A1C48B5E1395FAE20043E2C7 /* NSBezierPath+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+Utilities.m"; sourceTree = "<group>"; };
+		A1C48B63139602480043E2C7 /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		A1C48B64139602480043E2C7 /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		A1C48B66139602800043E2C7 /* Canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Canvas.h; sourceTree = "<group>"; };
+		A1C48B67139602810043E2C7 /* Canvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Canvas.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BB86FDD16384C490000C242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB86FE216384C490000C242 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C48B301395FA380043E2C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB8700F16384D350000C242 /* AtoZBezierPath.framework in Frameworks */,
+				A1C48B381395FA380043E2C7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BB86FE316384C490000C242 /* AtoZBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				7BB86FEA16384C490000C242 /* AtoZBezierPath.h */,
+				7BB86FEB16384C490000C242 /* AtoZBezierPath.m */,
+				7BB86FE416384C490000C242 /* Supporting Files */,
+			);
+			path = AtoZBezierPath;
+			sourceTree = "<group>";
+		};
+		7BB86FE416384C490000C242 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BB86FE516384C490000C242 /* AtoZBezierPath-Info.plist */,
+				7BB86FE616384C490000C242 /* InfoPlist.strings */,
+				7BB86FE916384C490000C242 /* AtoZBezierPath-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1C48B281395FA370043E2C7 = {
+			isa = PBXGroup;
+			children = (
+				A1C48B3D1395FA390043E2C7 /* VectorBoolean */,
+				7BB86FE316384C490000C242 /* AtoZBezierPath */,
+				A1C48B361395FA380043E2C7 /* Frameworks */,
+				A1C48B341395FA380043E2C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1C48B341395FA380043E2C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1C48B331395FA380043E2C7 /* VectorBoolean.app */,
+				7BB86FE116384C490000C242 /* AtoZBezierPath.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1C48B361395FA380043E2C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1C48B371395FA380043E2C7 /* Cocoa.framework */,
+				A1C48B391395FA390043E2C7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1C48B391395FA390043E2C7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1C48B3A1395FA390043E2C7 /* AppKit.framework */,
+				A1C48B3B1395FA390043E2C7 /* CoreData.framework */,
+				A1C48B3C1395FA390043E2C7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A1C48B3D1395FA390043E2C7 /* VectorBoolean */ = {
+			isa = PBXGroup;
+			children = (
+				A1C48B491395FA390043E2C7 /* MyDocument.h */,
+				A1C48B4A1395FA390043E2C7 /* MyDocument.m */,
+				A1C48B63139602480043E2C7 /* CanvasView.h */,
+				A1C48B64139602480043E2C7 /* CanvasView.m */,
+				A1C48B66139602800043E2C7 /* Canvas.h */,
+				A1C48B67139602810043E2C7 /* Canvas.m */,
+				A192AB57139D8D5F00AF40BA /* Geometry.h */,
+				A192AB58139D8D6000AF40BA /* Geometry.m */,
+				A11131E313960B9D00C9395C /* NSBezierPath+Boolean.h */,
+				A11131E413960B9D00C9395C /* NSBezierPath+Boolean.m */,
+				A1C48B5D1395FAE10043E2C7 /* NSBezierPath+Utilities.h */,
+				A1C48B5E1395FAE20043E2C7 /* NSBezierPath+Utilities.m */,
+				A192AB51139D843B00AF40BA /* FBBezierCurve.h */,
+				A192AB52139D843B00AF40BA /* FBBezierCurve.m */,
+				A192AB54139D863900AF40BA /* FBBezierIntersection.h */,
+				A192AB55139D863900AF40BA /* FBBezierIntersection.m */,
+				A1A3D0A513A9BCB800678AA9 /* FBBezierGraph.h */,
+				A1A3D0A613A9BCB900678AA9 /* FBBezierGraph.m */,
+				A1A3D0A913A9CE0E00678AA9 /* FBBezierContour.h */,
+				A1A3D0AA13A9CE0F00678AA9 /* FBBezierContour.m */,
+				A1A3D0AC13A9CE3B00678AA9 /* FBContourEdge.h */,
+				A1A3D0AD13A9CE3B00678AA9 /* FBContourEdge.m */,
+				A1A3D0AF13A9CE5100678AA9 /* FBEdgeCrossing.h */,
+				A1A3D0B013A9CE5200678AA9 /* FBEdgeCrossing.m */,
+				A1A3D0B213AC0F2F00678AA9 /* FBDebug.h */,
+				A1A3D0B313AC0F3100678AA9 /* FBDebug.m */,
+				A1C48B4C1395FA390043E2C7 /* MyDocument.xib */,
+				A1C48B4F1395FA390043E2C7 /* MainMenu.xib */,
+				A1C48B3E1395FA390043E2C7 /* Supporting Files */,
+			);
+			path = VectorBoolean;
+			sourceTree = "<group>";
+		};
+		A1C48B3E1395FA390043E2C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1C48B3F1395FA390043E2C7 /* VectorBoolean-Info.plist */,
+				A1C48B401395FA390043E2C7 /* InfoPlist.strings */,
+				A1C48B431395FA390043E2C7 /* VectorBoolean-Prefix.pch */,
+				A1C48B441395FA390043E2C7 /* main.m */,
+				A1C48B461395FA390043E2C7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7BB86FDE16384C490000C242 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB86FF016384C630000C242 /* MyDocument.h in Headers */,
+				7BB86FF116384C630000C242 /* CanvasView.h in Headers */,
+				7BB86FF216384C630000C242 /* Canvas.h in Headers */,
+				7BB86FF316384C630000C242 /* Geometry.h in Headers */,
+				7BB86FF416384C630000C242 /* NSBezierPath+Boolean.h in Headers */,
+				7BB86FF516384C630000C242 /* NSBezierPath+Utilities.h in Headers */,
+				7BB86FF616384C630000C242 /* FBBezierCurve.h in Headers */,
+				7BB86FF716384C630000C242 /* FBBezierIntersection.h in Headers */,
+				7BB86FF816384C630000C242 /* FBBezierGraph.h in Headers */,
+				7BB86FF916384C630000C242 /* FBBezierContour.h in Headers */,
+				7BB86FFA16384C630000C242 /* FBContourEdge.h in Headers */,
+				7BB86FFB16384C630000C242 /* FBEdgeCrossing.h in Headers */,
+				7BB86FFC16384C630000C242 /* FBDebug.h in Headers */,
+				7BB86FFD16384C630000C242 /* AtoZBezierPath.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7BB86FE016384C490000C242 /* AtoZBezierPath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BB86FED16384C490000C242 /* Build configuration list for PBXNativeTarget "AtoZBezierPath" */;
+			buildPhases = (
+				7BB86FDC16384C490000C242 /* Sources */,
+				7BB86FDD16384C490000C242 /* Frameworks */,
+				7BB86FDE16384C490000C242 /* Headers */,
+				7BB86FDF16384C490000C242 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtoZBezierPath;
+			productName = AtoZBezierPath;
+			productReference = 7BB86FE116384C490000C242 /* AtoZBezierPath.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1C48B321395FA380043E2C7 /* VectorBoolean */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C48B541395FA390043E2C7 /* Build configuration list for PBXNativeTarget "VectorBoolean" */;
+			buildPhases = (
+				A1C48B2F1395FA380043E2C7 /* Sources */,
+				A1C48B301395FA380043E2C7 /* Frameworks */,
+				A1C48B311395FA380043E2C7 /* Resources */,
+				7BB8700E16384D2A0000C242 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BB8700D16384D240000C242 /* PBXTargetDependency */,
+			);
+			name = VectorBoolean;
+			productName = VectorBoolean;
+			productReference = A1C48B331395FA380043E2C7 /* VectorBoolean.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1C48B2A1395FA370043E2C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AZ;
+				ORGANIZATIONNAME = "Fortunate Bear, LLC";
+			};
+			buildConfigurationList = A1C48B2D1395FA370043E2C7 /* Build configuration list for PBXProject "AtoZBezierPath" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A1C48B281395FA370043E2C7;
+			productRefGroup = A1C48B341395FA380043E2C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1C48B321395FA380043E2C7 /* VectorBoolean */,
+				7BB86FE016384C490000C242 /* AtoZBezierPath */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BB86FDF16384C490000C242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB86FE816384C490000C242 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C48B311395FA380043E2C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C48B421395FA390043E2C7 /* InfoPlist.strings in Resources */,
+				A1C48B481395FA390043E2C7 /* Credits.rtf in Resources */,
+				A1C48B4E1395FA390043E2C7 /* MyDocument.xib in Resources */,
+				A1C48B511395FA390043E2C7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BB86FDC16384C490000C242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB86FFF16384C870000C242 /* MyDocument.m in Sources */,
+				7BB8700016384C870000C242 /* CanvasView.m in Sources */,
+				7BB8700116384C870000C242 /* Canvas.m in Sources */,
+				7BB8700216384C870000C242 /* Geometry.m in Sources */,
+				7BB8700316384C870000C242 /* NSBezierPath+Boolean.m in Sources */,
+				7BB8700416384C870000C242 /* NSBezierPath+Utilities.m in Sources */,
+				7BB8700516384C870000C242 /* FBBezierCurve.m in Sources */,
+				7BB8700616384C870000C242 /* FBBezierIntersection.m in Sources */,
+				7BB8700716384C870000C242 /* FBBezierGraph.m in Sources */,
+				7BB8700816384C870000C242 /* FBBezierContour.m in Sources */,
+				7BB8700916384C870000C242 /* FBContourEdge.m in Sources */,
+				7BB8700A16384C870000C242 /* FBEdgeCrossing.m in Sources */,
+				7BB8700B16384C870000C242 /* FBDebug.m in Sources */,
+				7BB86FEC16384C490000C242 /* AtoZBezierPath.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C48B2F1395FA380043E2C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C48B451395FA390043E2C7 /* main.m in Sources */,
+				A1C48B4B1395FA390043E2C7 /* MyDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BB8700D16384D240000C242 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BB86FE016384C490000C242 /* AtoZBezierPath */;
+			targetProxy = 7BB8700C16384D240000C242 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BB86FE616384C490000C242 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BB86FE716384C490000C242 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A1C48B401395FA390043E2C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C48B411395FA390043E2C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A1C48B461395FA390043E2C7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C48B471395FA390043E2C7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A1C48B4C1395FA390043E2C7 /* MyDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C48B4D1395FA390043E2C7 /* en */,
+			);
+			name = MyDocument.xib;
+			sourceTree = "<group>";
+		};
+		A1C48B4F1395FA390043E2C7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C48B501395FA390043E2C7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BB86FEE16384C490000C242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AtoZBezierPath/AtoZBezierPath-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "AtoZBezierPath/AtoZBezierPath-Info.plist";
+				INSTALL_PATH = "@rpath";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		7BB86FEF16384C490000C242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AtoZBezierPath/AtoZBezierPath-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "AtoZBezierPath/AtoZBezierPath-Info.plist";
+				INSTALL_PATH = "@rpath";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		A1C48B521395FA390043E2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A1C48B531395FA390043E2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A1C48B551395FA390043E2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VectorBoolean/VectorBoolean-Prefix.pch";
+				INFOPLIST_FILE = "VectorBoolean/VectorBoolean-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A1C48B561395FA390043E2C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VectorBoolean/VectorBoolean-Prefix.pch";
+				INFOPLIST_FILE = "VectorBoolean/VectorBoolean-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BB86FED16384C490000C242 /* Build configuration list for PBXNativeTarget "AtoZBezierPath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB86FEE16384C490000C242 /* Debug */,
+				7BB86FEF16384C490000C242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A1C48B2D1395FA370043E2C7 /* Build configuration list for PBXProject "AtoZBezierPath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C48B521395FA390043E2C7 /* Debug */,
+				A1C48B531395FA390043E2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C48B541395FA390043E2C7 /* Build configuration list for PBXNativeTarget "VectorBoolean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C48B551395FA390043E2C7 /* Debug */,
+				A1C48B561395FA390043E2C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1C48B2A1395FA370043E2C7 /* Project object */;
+}
